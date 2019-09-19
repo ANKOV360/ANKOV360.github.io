@@ -1,0 +1,221 @@
+@media screen and (max-width: 767px)
+{
+    .header{
+        min-height: 100vh;
+        font-size: 0.8em;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+
+    .container-text{
+        top: 20%;
+    }
+
+    .logo-container{
+        display: flex;
+        width: auto;
+        margin: 0;
+    }
+
+    .nav-container{
+        display: none;
+        background-color: #fff;
+        color: black!important;
+    }
+
+    .mob-active{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 8888!important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mob-active .nav-container{
+        display: inline-block;
+    }
+
+    .mob-active .container{
+        height: inherit;
+    }
+
+    .mob-active .container .row{
+        height: inherit;
+    }
+
+    .mob-active .navigation{
+        height: 100%;
+    }
+
+    .mob-active .menu{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    .mob-active .logo-container{
+        display: none;
+    }
+
+    .toggle-mnu{
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: 999999;
+    }
+
+    .toggle-mnu span{
+        width: 50%;
+        height: 3px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .toggle-mnu span:nth-child(1){
+        margin-top: -10px;
+    }
+
+    .toggle-mnu span:nth-child(3){
+        margin-top: 10px;
+    }
+
+    .toggle-mnu.active span:nth-child(2){
+        background-color: transparent;
+    }
+
+    .toggle-mnu.active span:nth-child(1), .toggle-mnu.active span:nth-child(3){
+        margin-top: 0;
+    }
+
+    .toggle-mnu.active span:nth-child(1){
+        transform: rotate(135deg);
+    }
+
+    .toggle-mnu.active span:nth-child(3){
+        transform: rotate(-135deg);
+    }
+
+    .services-list{
+        flex-direction: column;
+    }
+
+    .service-item{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .about-wrap{
+        flex-direction: column;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    .works-philters{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .portfolio-item{
+        max-width: 300px;
+        max-height: 160px;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    .cl-logo{
+        margin-top: 15px;
+    }
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .clients-logo{
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-write{
+        width: 100%;
+    }
+
+    .text-wrap{
+        margin-left: -25px;
+    }
+
+    .write__wrap{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .write__wrap input{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .submit-mail{
+        width: 75%!important;
+    }
+
+}
+
+.sticky {
+    background: #fff!important;
+    z-index: 9998;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+.sticky a{
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__link{
+        color: white;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body{
+        font-family: 'Roboto Slab','Roboto', 'Segoe UI', Arial, sans-serif;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .info-s p {
+        font-size: 12px;
+    }
+    .fa-wrap {
+        margin-left: 0px;
+    }
+    .hide-on-mobile { display: none; }
+
+    .portfolio-item {
+        min-width: 30px;
+        min-height: 20px;
+        width: 330px;
+        height: 190px;
+    }
+}
